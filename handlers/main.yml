@@ -1,0 +1,3 @@
+---
+- name: send test message
+  shell: "MONIT_EVENT=\"something wrong\" MONIT_DESCRIPTION=test MONIT_HOST=`hostname` MONIT_DATE=`date -R` /usr/local/bin/slack"

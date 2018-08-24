@@ -1,0 +1,12 @@
+# tasks file for slack
+---
+- name : Copying Slack file
+  template:
+    src: slack.j2
+    dest: /usr/local/bin/slack
+    mode: a+x
+    backup: yes
+  notify:
+    - send test message
+
+ 

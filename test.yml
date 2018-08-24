@@ -1,0 +1,9 @@
+---
+  - hosts: localhost
+    remote_user: root
+    force_handlers: True
+    gather_facts: False
+    vars:
+      slack_url: "https://hooks.slack.com/services/xxxx/xxxx/xxxxxx"
+    roles:
+      - role: '{{playbook_dir}}'
